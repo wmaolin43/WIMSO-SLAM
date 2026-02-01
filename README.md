@@ -9,8 +9,7 @@
 
 <!-- Badges (replace <USER>/<REPO> after publishing) -->
 <p>
-  <a href="https://github.com/<USER>/<REPO>/actions/workflows/ci.yml">
-    <img alt="CI" src="https://github.com/<USER>/<REPO>/actions/workflows/ci.yml/badge.svg">
+
   </a>
   <img alt="license" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg">
   <img alt="python" src="https://img.shields.io/badge/Python-3.8%2B-blue.svg">
