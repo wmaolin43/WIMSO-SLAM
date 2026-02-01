@@ -27,9 +27,6 @@
 | **Online pixelwise uncertainty** to reweight tracking/mapping losses (optionally per-sensor) | **画素単位の不確実性** に基づく損失の重み付け（センサ別も可） |
 | Mesh extraction (marching cubes), trajectory export, lightweight evaluation utilities | メッシュ生成（Marching Cubes）、軌跡出力、簡易評価ツール |
 
-> **Note / 注意**  
-> EN: This is a research-grade implementation focused on clarity and reproducibility.  
-> JP: 読みやすさと再現性を重視した研究向け実装です。
 
 > **Personal learning project / 個人学習プロジェクト**  
 > EN: This repository is a personal SLAM development exercise for learning and experimentation (personal use).  
@@ -77,17 +74,18 @@ A small number of unreliable pixels can dominate optimization and destabilize po
 
 ```mermaid
 flowchart LR
-  A[RGB + Depth (one or multiple sensors)] --> B[Pixelwise uncertainty]
-  A --> C[Ray / point sampling]
-  C --> D[Multi-scale plane features]
-  D --> E[Shallow decoders]
-  E --> F[SDF + color/aux]
-  B --> G[Per-pixel weights]
-  F --> H[Residuals (geom + photo)]
+  A["RGB-D input (single / multi-sensor depth)"] --> B["Pixelwise uncertainty"]
+  A --> C["Ray / point sampling"]
+  C --> D["Multi-scale plane features"]
+  D --> E["Shallow decoders"]
+  E --> F["SDF + color / aux"]
+  B --> G["Per-pixel weights"]
+  F --> H["Residuals (geom + photo)"]
   G --> H
-  H --> I[Tracking: pose update]
-  H --> J[Mapping: feature/decoder update]
-  J --> K[Meshing: marching cubes]
+  H --> I["Tracking: pose update"]
+  H --> J["Mapping: feature/decoder update"]
+  J --> K["Meshing: marching cubes"]
+
 ```
 
 ### Key ideas / コアアイデア
