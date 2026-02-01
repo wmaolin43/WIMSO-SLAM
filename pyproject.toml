@@ -1,0 +1,19 @@
+[project]
+name = "wimsoslam"
+version = "0.1.0"
+description = "WIMSO-SLAM: Weighted Implicit Multi-Scale SDF SLAM with Online Uncertainty Reweighting"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+authors = [{ name = "Maolin Wang" }]
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "I"]
+ignore = ["E501"]
+
+[tool.ruff.isort]
+known-first-party = ["wimsoslam"]
+
+[tool.pytest.ini_options]
+addopts = "-q"

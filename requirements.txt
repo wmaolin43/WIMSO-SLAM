@@ -1,0 +1,22 @@
+# Minimal pip requirements (CUDA-enabled PyTorch must be installed separately)
+# EN: Prefer conda via environment.yaml for a known-good setup.
+# JP: 安定動作のため environment.yaml (conda) を推奨します。
+
+numpy
+scipy
+PyYAML
+opencv-python
+open3d
+tqdm
+imageio
+matplotlib
+lpips
+einops
+trimesh
+PyMCubes
+
+# Optional / environment-specific:
+# torch
+# torchvision
+# torchaudio
+# pytorch3d

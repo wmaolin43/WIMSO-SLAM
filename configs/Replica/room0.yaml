@@ -1,0 +1,8 @@
+inherit_from: configs/Replica/replica.yaml
+mapping:
+  bound: [[-1.9,7.9],[-2.2,4.5],[-2.5,2.3]]
+  marching_cubes_bound: [[-1.9,7.9],[-2.2,4.5],[-2.5,2.3]]
+data:
+  # input_folder: Datasets/Replica/room0
+  input_folder: /data/public/xqf/123/danzi/22/GO-SLAM1/data/Replica/room0
+  output: output/Replica/room0

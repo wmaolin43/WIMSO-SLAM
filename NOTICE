@@ -1,0 +1,18 @@
+THIRD-PARTY NOTICE
+
+This repository redistributes and modifies components under the Apache License 2.0.
+
+Upstream repositories (Apache-2.0)
+- idiap/ESLAM
+- cvg/nice-slam
+
+Research inspirations
+- The uncertainty-aware loss reweighting strategy is informed by prior literature on robust/dense SLAM.
+  (Informational only; only the repositories listed above are redistributed here.)
+
+Third-party libraries
+See requirements.txt / environment.yaml for the dependency list (PyTorch, Open3D, trimesh, etc.).
+
+License
+This repository is distributed under Apache-2.0 (see LICENSE). For third-party licenses, refer to the
+respective repositories and/or LICENSE files when applicable.
